@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html {
+    font-size: 10px;
+    color: white;
+}
+body {
+    background-color: rgb(51, 50, 50);
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Russo One', sans-serif, Arial, Helvetica;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#scoreSection {
+    margin: 10px;
+}
+p {
+    font-size: 30px;
+}
+#gameBoardSection {
+    height: 40%;
+    width: 25%;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    display: grid;
+    grid-template-areas:
+    'fd1 fd2 fd3'
+    'fd4 fd5 fd6'
+    'fd7 fd8 fd9';
+}
+#field1 {
+    grid-area: fd1;
+}
+#field2 {
+    grid-area: fd2;
+}
+#field3{
+    grid-area: fd3;
+}
+#field4 {
+    grid-area: fd4;
+}
+#field5 {
+    grid-area: fd5;
+}
+#field6 {
+    grid-area: fd6;
+}
+#field7 {
+    grid-area: fd7;
+}
+#field8 {
+    grid-area: fd8;
+}
+#field9 {
+    grid-area: fd9;
+}
+.field {
+    border: 1px solid white;
+}
+#playersSection {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 27%;
+    height: 9%;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+h2 {
+    font-size: 25px;
+}
+.input {
+    height: 100%;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+}
+.input:focus {
+    outline: none;
+    box-shadow: 3px 3px 5px black;
+}
+#startButton {
+    height: 5%;
+    width: 10%;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#startButton:focus {
+    outline: none;
+}
+#startButton:active {
+    transform: scale(0.95);
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+    #playersSection {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #playersSection {
+        width: 35%;
+    }
+    #gameBoardSection {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #playersSection {
+        width: 40%;
+    }
+    #gameBoardSection {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 900px) {
+    #playersSection {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #playersSection {
+        width: 50%;
+    }
+}
