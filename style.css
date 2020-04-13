@@ -30,7 +30,7 @@ h1 {
 #scoreSection {
     margin: 10px;
 }
-p {
+#scoreOutput {
     font-size: 30px;
 }
 #gameBoardSection {
@@ -74,6 +74,16 @@ p {
 }
 .field {
     border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mark {
+    font-size: 40px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
 }
 #playersSection {
     margin: 10px;
